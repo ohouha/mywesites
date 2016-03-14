@@ -396,16 +396,18 @@ margin-top:10%;
    height:102%;
 
 }
+
 #myTabs li a{
    height:100%;
    padding:0;
    border-radius:0px;
    text-align:center;
    padding-top:10%;
-   font-size:20px;
 
 }
-
+#home-tab,#profile-tab{
+    font-size:120%;
+}
 .nav-tabs>li{
     margin-bottom:-5px;
 }
@@ -613,10 +615,10 @@ a.slide_btn {
     margin:0px;
     text-align:center;
     border-color:white;
+
 }
 .thumbnail img{
-    width:85%;
-    height:70%;
+   
 }
 .thumbnail:first-child{
     margin-left:15%;
@@ -718,4 +720,8 @@ span{
         opacity: 1;
         -webkit-transform: translateY(0%);
     }
+}
+@media only screen and (max-width: 600px){
+   
+ 
 }
