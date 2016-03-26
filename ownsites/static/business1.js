@@ -3,9 +3,19 @@
     $(this).tab('show')
 });
 window.onload = function () {
+
+    //$(window).resize(function () {
+    //    if ($(window).width() < 800) {
+    //        $('.addclass').toggleClass('slide2');
+    //    }
+    //    if ($(window).width() > 800) {
+    //        $('.addclass').toggleClass('slide2');
+    //    }
+    //});
+
     $('.slider').each(function () {
         var $this = $(this);
-        var $slides = $this.find('.slide2');
+        var $slides = $('.slide2');
         var buttonArray = [];
         var currentIndex = 0;
         var timeout;
@@ -14,7 +24,7 @@ window.onload = function () {
             var animateLeft, slideLeft;
             advance();
 
-            if ($slides.is(':animated') || currentIndex === newIndex ) {
+            if ($slides.is(':animated') || currentIndex === newIndex) {
                 return;
             }
 
